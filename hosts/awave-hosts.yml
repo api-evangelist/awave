@@ -1,0 +1,35 @@
+generated: '2026-09-27'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.awave.se
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: awave.se
+  role: api
+  relation: own
+- host: www.awave.se
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - Support
+  serves: []
+  registrable_domain: awave.se
+  role: website
+  relation: own
